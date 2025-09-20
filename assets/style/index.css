@@ -18,21 +18,19 @@ body {
 }
 
 .container {
-    width: 350px;
-    height: 400px;
+    max-width: 350px;
+    width: 100%;
     background: linear-gradient(135deg, #323232 0%, #2C2C2C 100%);
     color: white;
     border-radius: 14px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 40px 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 30px 30px;
 }
 
 .container h1 {
     text-align: center;
     font-style: italic;
     font-weight: 800;
-    font-variation-settings: 'slnt' -9;
-    letter-spacing: 1px;
     font-size: 30px;
 }
 
@@ -45,17 +43,15 @@ body {
 
 .input-box {
     width: 100%;
-    height: 100%;
     margin: 20px 0;
 }
 
 .input-box input {
     width: 100%;
-    height: 100%;
     border-radius: 12px;
     outline: none;
     font-size: 13px;
-    padding: 8px 22px 8px;
+    padding: 8px 18px 8px;
 }
 
 .input-box label {
@@ -64,3 +60,91 @@ body {
     display: block
 }
 
+.lembrar-senha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.lembrar-senha label input{
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.lembrar-senha a {
+    text-decoration: none;
+    color: white;
+}
+
+.lembrar-senha a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    display: block;
+    margin: 24px auto 0 auto;
+    width: 80%;
+    height: 30px;
+    background-color: #9041DE;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    transition: transform 0.4s ease, box-shadow 0.2s ease
+}
+
+.login-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.cadastrar {
+    text-align: center;
+    margin: 20px 0 15px;
+    font-size: 13px;
+}
+
+.cadastrar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.cadastrar a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+    .container h1 {
+        font-size: 24px;
+    }
+    .boas-vindas {
+        font-size: 14px;
+    }
+
+    .input-box label,
+    .input-box input,
+    .lembrar-senha { 
+        font-size: 14px;
+    }
+    .login-button {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {
+        border-radius: 8px;
+    }
+
+    .boas-vindas {
+        display: none;
+    }
+}
