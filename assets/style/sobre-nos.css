@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../images/fit-hub.png');
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
+    color: white;
+    padding: 30px 30px;
+    justify-content: center;
+    display: flex;
+    gap: 300px;
+    margin-bottom: 70px;
+}
+
+header h2 {
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header h2 i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.risquinhos {
+    color: white;
+    margin: 20px;
+    margin-top: -125px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    align-items: center;
+}
+
+.container-about-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.bloco-about {
+    width: 300px;
+    height: 340px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+    color: white;
+    
+}
+
+.bloco-about h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.bloco-about p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.bloco-about:hover {
+    box-shadow: 0 0 35px black;
+    transform: scale(1.02);
+    cursor: pointer;
+}
