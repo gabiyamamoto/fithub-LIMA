@@ -79,6 +79,7 @@ body {
 
 .lembrar-senha a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .login-button {
@@ -110,6 +111,7 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .cadastrar a:hover {
