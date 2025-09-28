@@ -7,26 +7,47 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../images/fundo-preto-blur.png');
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+}
+
 header {
     background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
     color: white;
-    padding: 20px;
+    padding: 30px;
     justify-content: center;
-    align-items: center;
     display: flex;
     gap: 300px;
+    margin-bottom: 70px;
 }
 
 header h2 {
     display: flex;
     align-items: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header h2 i {
     margin-right: 8px;
+    font-size: 20px;
+}
+
+.risquinhos {
+    color: white;
+    padding-right: 40px;
+    margin-top: -125px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    align-items: center;
 }
 
 .banner {
@@ -35,7 +56,7 @@ header h2 i {
     justify-content: space-between;
     background: linear-gradient(90deg, #000000 0%, #3D2468 100%);
     border-radius: 20px;
-    margin: 20px auto 40px auto;
+    margin: 80px auto 40px auto;
     padding-right: 50px;
     width: 95%;
     height: 120px;
@@ -113,10 +134,24 @@ header h2 i {
     transform: scale(1.08);
 }
 
+footer {
+    background: linear-gradient(90deg, #000000 0%, #3D2468 100%);
+    color: white;
+    margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+    font-size: 17px;
+}
+
 @media (max-width: 1024px) {
     header {
         gap: 40px;
         padding: 15px;
+    }
+
+    .risquinhos {
+        margin-top: -110px;
+        padding-right: 20px;
     }
 
     .banner {
@@ -150,6 +185,16 @@ header h2 i {
     header {
         gap: 20px;
         flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    .risquinhos {
+        margin-top: -110px;
+        padding-right: 10px;
     }
 
     .banner {
@@ -180,5 +225,9 @@ header h2 i {
     .card {
         max-width: 90%;
         height: 300px;
+    }
+
+    footer {
+        font-size: 15px;
     }
 }
