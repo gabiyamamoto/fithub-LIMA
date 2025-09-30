@@ -176,12 +176,3 @@ p:hover {
     color: black;
     border-radius: 8px;
 }
-
-footer {
-    background: linear-gradient(90deg, #000000 0%, #3D2468 100%);
-    color: white;
-    margin-top: 50px;
-    padding: 40px;
-    text-align: center;
-    font-size: 17px;
-}
