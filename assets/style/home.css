@@ -20,16 +20,19 @@ body {
 header {
     background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
     color: white;
+    margin: 0;
     padding: 30px;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     display: flex;
-    gap: 300px;
+    flex-wrap: wrap;
     margin-bottom: 70px;
 }
 
 header h2 {
     display: flex;
     align-items: center;
+    margin: 0 15px;
     font-weight: 100;
     cursor: pointer;
     font-family: 'Bebas Neue', sans-serif;
@@ -42,12 +45,10 @@ header h2 i {
 
 .risquinhos {
     color: white;
-    padding-right: 40px;
-    margin-top: -125px;
     display: flex;
-    justify-content: flex-end;
     cursor: pointer;
     align-items: center;
+    font-size: 26px;
 }
 
 .banner {
@@ -56,7 +57,7 @@ header h2 i {
     justify-content: space-between;
     background: linear-gradient(90deg, #000000 0%, #3D2468 100%);
     border-radius: 20px;
-    margin: 80px auto 40px auto;
+    margin: 0 auto 40px auto;
     padding-right: 50px;
     width: 95%;
     height: 120px;
@@ -145,13 +146,15 @@ footer {
 
 @media (max-width: 1024px) {
     header {
-        gap: 40px;
         padding: 15px;
     }
 
+    header h2 {
+        font-size: 22px;
+    }
+
     .risquinhos {
-        margin-top: -110px;
-        padding-right: 20px;
+        font-size: 24px;
     }
 
     .banner {
@@ -183,18 +186,16 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        gap: 20px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         padding: 15px;
     }
 
     header h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .risquinhos {
-        margin-top: -110px;
-        padding-right: 10px;
+        font-size: 20px;
     }
 
     .banner {
