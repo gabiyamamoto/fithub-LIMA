@@ -23,7 +23,6 @@ header {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 70px;
 }
 
