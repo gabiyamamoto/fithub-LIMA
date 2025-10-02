@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converse com um profissional</title>
+    <link rel="stylesheet" href="../assets/style/chatProfissional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h2><i class="fas fa-home"></i>Home</h2>
+    <h2><i class="fas fa-shopping-cart"></i>Loja</h2>
+    <h2><i class="fas fa-comments"></i>Bate-papo</h2>
+    <h2><i class="fas fa-headset"></i>Suporte</h2>
+  </header>
+
+  <main class="chat-container">
+    <aside class="lista">
+      <h3>Profissionais</h3>
+      <div class="usuario">👤  </div>
+      <div class="usuario ativo">👤  </div>
+      <div class="usuario">👤  </div>
+    </aside>
+
+    <section class="chat">
+      <div class="perfil">
+        <img src="../assets/images/user.png" alt="Usuário" />
+        <h4>Converse com o Profissional</h4>
+      </div>
+
+      <div class="mensagens-container" id="mensagensContainer">
+        <div class="mensagem recebida">Olá! Vi que você iniciou seu acompanhamento, gostaria de saber quais são seus principais objetivos com a alimentação e treino.</div>
+        <div class="mensagem enviada">Oi! Meu objetivo principal é perder peso, mas sem perder energia para os treinos.</div>
+      </div>
+
+      <div class="inputBox">
+        <input type="text" id="msgInput" placeholder="Digite sua mensagem..." />
+        <button onclick="enviarMsg()">Enviar</button>
+      </div>
+    </section>
+  </main>
+
+<script>
+  function enviarMsg() {
+    var mensagensContainer = document.getElementById("mensagensContainer");
+    var input = document.getElementById("msgInput");
+
+    if (input.value !== "") {
+      mensagensContainer.innerHTML += "<div>" + input.value + "</div>";
+      input.value = "";
+    }
+  }
+</script>
+
+</body>
+</html>
