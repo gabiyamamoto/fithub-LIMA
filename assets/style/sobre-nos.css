@@ -19,10 +19,11 @@ body {
 header {
     background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
     color: white;
-    padding: 30px 30px;
-    justify-content: center;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
     display: flex;
-    gap: 300px;
+    flex-wrap: wrap;
     margin-bottom: 70px;
 }
 
@@ -32,6 +33,7 @@ header h2 {
     font-weight: 100;
     cursor: pointer;
     font-family: 'Bebas Neue', sans-serif;
+    margin: 0 15px;
 }
 
 header h2 i {
@@ -41,10 +43,7 @@ header h2 i {
 
 .risquinhos {
     color: white;
-    margin: 20px;
-    margin-top: -125px;
     display: flex;
-    justify-content: flex-end;
     cursor: pointer;
     align-items: center;
 }
@@ -106,4 +105,81 @@ footer {
     padding: 40px;
     text-align: center;
     font-size: 17px;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* Tablets grandes (até 1024px) */
+@media (max-width: 1024px) {
+header {
+flex-direction: row;
+justify-content: space-between;
+padding: 20px;
+}
+
+.container-about-us {
+gap: 60px; /* mais espaço entre blocos */
+}
+
+.bloco-about {
+max-width: 300px;
+padding: 25px;
+}
+
+.bloco-about p {
+font-size: 17px;
+}
+}
+
+/* Tablets médios e celulares grandes (até 768px) */
+@media (max-width: 768px) {
+header {
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+
+header h2 {
+font-size: 18px;
+}
+
+.container-about-us {
+flex-direction: column;
+gap: 40px;
+margin-top: 30px;
+}
+
+.bloco-about {
+max-width: 90%;
+}
+
+.bloco-about p {
+font-size: 16px;
+}
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+header {
+flex-direction: row;
+justify-content: space-between;
+padding: 15px;
+}
+
+header h2 {
+font-size: 16px;
+}
+
+.bloco-about h3 {
+font-size: 20px;
+}
+
+.bloco-about p {
+font-size: 15px;
+}
+
+footer {
+font-size: 14px;
+padding: 20px;
+}
 }
