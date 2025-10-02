@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="../assets/style/chatSuporte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h2><i class="fas fa-home"></i>Home</h2>
+    <h2><i class="fas fa-shopping-cart"></i>Loja</h2>
+    <h2><i class="fas fa-comments"></i>Bate-papo</h2>
+    <h2><i class="fas fa-headset"></i>Suporte</h2>
+  </header>
+
+  <main class="chat-container">
+    <aside class="lista">
+      <h3>Atendentes</h3>
+      <div class="usuario ativo">Daniel Casalli</div>
+      <div class="usuario">Maria Eduarda</div>
+      <div class="usuario">Julia Erlo</div>
+      <div class="usuario">Gabriela Emi</div>
+    </aside>
+
+    <section class="chat">
+      <div class="perfil">
+        <img src="../assets/images/user.png" alt="Atendente" />
+        <h4>Daniel Casalli</h4>
+      </div>
+
+      <div class="mensagens-container" id="mensagensContainer">
+        <div class="mensagem recebida">Olá! Precisa de ajuda? Estou aqui para te orientar com o uso do app.</div>
+      </div>
+
+      <div class="inputBox">
+        <input id="msgInput" type="text" placeholder="Digite sua mensagem..." />
+        <button onclick="enviarMsg()">Enviar</button>
+      </div>
+    </section>
+  </main>
+
+<script>
+  function enviarMsg() {
+    var mensagensContainer = document.getElementById("mensagensContainer");
+    var input = document.getElementById("msgInput");
+
+    if (input.value !== "") {
+      mensagensContainer.innerHTML += "<div>" + input.value + "</div>";
+      input.value = "";
+    }
+  }
+</script>
+
+</body>
+</html>

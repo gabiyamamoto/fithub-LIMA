@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: url('../images/fundo-fithub.png') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  min-height: 100vh;
+  color: white;
+}
+
+header {
+  background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
+    color: white;
+    padding: 30px 30px;
+    justify-content: center;
+    display: flex;
+    gap: 300px; 
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 70px;
+}
+
+header h2 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-weight: 100;
+  transition: color 0.3s;
+}
+
+header h2:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+header h2 i {
+  margin-right: 8px;
+}
+
+.chat-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: calc(100vh - 120px);
+  padding: 20px;
+  gap: 20px;
+}
+
+.lista {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+}
+
+.lista h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.usuario {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: white;
+  text-align: center;
+}
+
+.usuario:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ativo {
+  background-color: #9041DE;
+  color: white;
+}
+
+.chat {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.perfil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.perfil h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.mensagens-container {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mensagem {
+  max-width: 60%;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.recebida {
+  background-color: rgba(255, 255, 255, 0.2);
+  align-self: flex-start;
+}
+
+.enviada {
+  background-color: #9041DE;
+  align-self: flex-end;
+}
+
+.inputBox {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+}
+
+.inputBox input::placeholder {
+  color: #ccc;
+}
+
+.inputBox button {
+  padding: 10px 20px;
+  background-color: #9041DE;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.inputBox button:hover {
+  background-color: #703FC6;
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 10px;
+  }
+  
+  header {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .inputBox {
+    flex-direction: column;
+  }
+}
