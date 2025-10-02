@@ -69,11 +69,11 @@ header h2 a {
 
 .container-about-us {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: clamp(20px, 5vw, 80px);
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 60px auto 0 auto;
 }
 
