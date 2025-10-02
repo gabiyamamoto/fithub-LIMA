@@ -67,33 +67,27 @@ body {
     font-size: 13px;
 }
 
-.lembrar-senha label input{
+.lembrar-senha label input {
     accent-color: white;
     margin-right: 5px;
 }
 
-.lembrar-senha a {
-    text-decoration: none;
-    color: white;
-}
-
-.lembrar-senha a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .login-button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 24px auto 0 auto;
     width: 80%;
     height: 30px;
     background-color: #9041DE;
-    border: none;
     border-radius: 30px;
     font-size: 15px;
     color: white;
     font-weight: 500;
-    transition: transform 0.4s ease, box-shadow 0.2s ease
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
 .login-button:hover {
@@ -108,13 +102,15 @@ body {
 }
 
 .cadastrar a {
-    text-decoration: none;
-    color: white;
     font-weight: 400;
-    cursor: pointer;
 }
 
-.cadastrar a:hover {
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
@@ -123,18 +119,21 @@ body {
         max-width: 90%;
         padding: 20px;
     }
+
     .container h1 {
         font-size: 24px;
     }
+
     .boas-vindas {
         font-size: 14px;
     }
 
     .input-box label,
     .input-box input,
-    .lembrar-senha { 
+    .lembrar-senha {
         font-size: 14px;
     }
+
     .login-button {
         width: 90%;
         font-size: 14px;
