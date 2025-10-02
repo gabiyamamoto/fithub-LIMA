@@ -8,16 +8,21 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url('../images/fundo-preto-loja.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
     color: white;
-    padding: 30px 30px;
-    justify-content: center;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
     display: flex;
-    gap: 300px; 
-    font-family: 'Bebas Neue', sans-serif;
+    flex-wrap: wrap; 
     margin-bottom: 70px;
 }
 
@@ -26,6 +31,8 @@ header h2 {
     align-items: center;
     font-weight: 100;
     cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0 15px;
 }
 
 header h2 i {
@@ -33,12 +40,18 @@ header h2 i {
      font-size: 20px;
 }
 
+.risquinhos {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
 main {
-    background-color: #ffff;
+    background: transparent;
     flex: 1;
     padding: 2px 2px;
     width: 100%;
-
 }
 
 .produtos-section {
@@ -46,6 +59,7 @@ main {
     font-style: italic;
     margin-bottom: 100px;
     text-align: center;
+    color: white;
 }
 
 .container-produtos {
@@ -62,7 +76,7 @@ main {
     width: 250px;
     border-radius: 20px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
     border-width: 4px;
     display: flex;
     flex-direction: column;
@@ -76,7 +90,7 @@ main {
 }
 
 .bloco-produto:hover {
-    box-shadow:  0 0 20px black;
+    box-shadow:  0 0 20px rgb(255, 255, 255);
     cursor: pointer;
     transform: scale(1.02);
 }
@@ -94,6 +108,7 @@ main {
     margin: 0;
     font-size: 20px;
     font-weight: normal;
+    color: white;
     
 }
 
@@ -104,6 +119,7 @@ main {
     font-size: 18px;
     margin-top: 10px;
     padding: 5px;
+    color: white;
 }
 
 .container {
@@ -156,7 +172,7 @@ main {
 
 .ver-mais {
     display: block;
-    background-color: #000000;
+    background-color: #ffffff;
     width: 10%;
     margin: 0 auto;
     padding: 3px;
@@ -164,7 +180,7 @@ main {
 }
 
 .ver-mais p {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
@@ -172,7 +188,84 @@ main {
 }
 
 p:hover {
-    background-color: white;
-    color: black;
-    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 21px;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* Tablets grandes (até 1024px) */
+@media (max-width: 1024px) {
+header {
+flex-direction: row;
+justify-content: space-between;
+padding: 20px;
+}
+
+.container-about-us {
+gap: 60px; /* mais espaço entre blocos */
+}
+
+.bloco-about {
+max-width: 300px;
+padding: 25px;
+}
+
+.bloco-about p {
+font-size: 17px;
+}
+}
+
+/* Tablets médios e celulares grandes (até 768px) */
+@media (max-width: 768px) {
+header {
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+
+header h2 {
+font-size: 18px;
+}
+
+.container-about-us {
+flex-direction: column;
+gap: 40px;
+margin-top: 30px;
+}
+
+.bloco-about {
+max-width: 90%;
+}
+
+.bloco-about p {
+font-size: 16px;
+}
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+header {
+flex-direction: row;
+justify-content: space-between;
+padding: 15px;
+}
+
+header h2 {
+font-size: 16px;
+}
+
+.bloco-about h3 {
+font-size: 20px;
+}
+
+.bloco-about p {
+font-size: 15px;
+}
+
+footer {
+font-size: 14px;
+padding: 20px;
+}
 }
