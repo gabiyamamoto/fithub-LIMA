@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -10,9 +13,7 @@ body {
     min-height: 100vh;
     background-image: url('../images/fundo-preto-loja.png');
     background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
-    padding: 0;
 }
 
 header {
@@ -22,29 +23,81 @@ header {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin-bottom: 70px;
 }
 
 header h2 {
     display: flex;
     align-items: center;
-    font-weight: 100;
-    cursor: pointer;
-    font-family: 'Bebas Neue', sans-serif;
     margin: 0 15px;
+    font-weight: 100;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header h2 i {
-     margin-right: 8px;
-     font-size: 20px;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+header h2 a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .risquinhos {
+    position: absolute;
+    top: 35px;
+    right: 190px;
     color: white;
     cursor: pointer;
     display: flex;
+    z-index: 1000;
+}
+
+.quadrado-categoria {
+    position: absolute;
+    top: 20px;
+    right: 170px;
+    width: 330px;
+    height: 360px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #50027a;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    z-index: 10;
+}
+
+.quadrado-categoria h3 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-size: 18px;
+    display: flex;
     align-items: center;
+    cursor: pointer;
+
+}
+
+.quadrado-categoria h2 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: -60px;
+    font-weight: 10;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 main {
@@ -86,11 +139,10 @@ main {
     margin-bottom: 20px;
     align-items: center;
     transition: transform 0.4s ease, box-shadow 0.2s ease;
-    
 }
 
 .bloco-produto:hover {
-    box-shadow:  0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
     cursor: pointer;
     transform: scale(1.02);
 }
@@ -100,7 +152,6 @@ main {
     height: 200px;
     margin-bottom: 30px;
     object-fit: contain;
-    
 }
 
 .bloco-produto h4 {
@@ -109,12 +160,11 @@ main {
     font-size: 20px;
     font-weight: normal;
     color: white;
-    
 }
 
 .bloco-produto p {
     text-align: left;
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Inter', sans-serif;
     font-weight: bolder;
     font-size: 18px;
     margin-top: 10px;
@@ -128,46 +178,6 @@ main {
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
-}
-
-.quadrado-categoria {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 330px;
-    height: 360px;
-    border-radius: 20px;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 20px;
-    background: #50027a;
-    justify-content: center;
-    display: flex;
-    gap: 50px;
-    z-index: 9000;
-}
-
-.quadrado-categoria h3 {
-    color: white;
-    font-family: 'Inter', sans-serif; 
-    margin: 0;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    
-}
-
-.quadrado-categoria h2 {
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
-    margin-top: -90px;
-    font-weight: 10;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
 }
 
 .ver-mais {
@@ -193,79 +203,63 @@ p:hover {
     border-radius: 21px;
 }
 
-/* ---------- RESPONSIVIDADE ---------- */
-
-/* Tablets grandes (até 1024px) */
 @media (max-width: 1024px) {
-header {
-flex-direction: row;
-justify-content: space-between;
-padding: 20px;
+    header {
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    .risquinhos {
+        top: 20px;
+        right: 35px;
+        font-size: 24px;
+    }
+
+    .quadrado-categoria {
+        right: 20px;
+        width: 200px;
+        top: 5px;
+    }
+
+    .container-produtos {
+        justify-content: center;
+    }
+    
+    .bloco-produto {
+        width: 45%;
+        min-width: 250px;
+    }
 }
 
-.container-about-us {
-gap: 60px; /* mais espaço entre blocos */
-}
-
-.bloco-about {
-max-width: 300px;
-padding: 25px;
-}
-
-.bloco-about p {
-font-size: 17px;
-}
-}
-
-/* Tablets médios e celulares grandes (até 768px) */
 @media (max-width: 768px) {
-header {
-flex-direction: column;
-align-items: center;
-gap: 15px;
-}
+    header {
+        flex-wrap: nowrap;
+        padding: 15px;
+    }
 
-header h2 {
-font-size: 18px;
-}
+    header h2 {
+        font-size: 18px;
+    }
 
-.container-about-us {
-flex-direction: column;
-gap: 40px;
-margin-top: 30px;
-}
+    .risquinhos {
+        top: 20px;
+        right: 25px;
+        font-size: 20px;
+    }
 
-.bloco-about {
-max-width: 90%;
-}
+    .bloco-produto {
+        width: 60%;
+    }
 
-.bloco-about p {
-font-size: 16px;
-}
-}
+    .quadrado-categoria {
+        right: 10px;
+        width: 180px;
+    }
 
-/* Celulares pequenos (até 480px) */
-@media (max-width: 480px) {
-header {
-flex-direction: row;
-justify-content: space-between;
-padding: 15px;
-}
-
-header h2 {
-font-size: 16px;
-}
-
-.bloco-about h3 {
-font-size: 20px;
-}
-
-.bloco-about p {
-font-size: 15px;
-}
-
-footer {
-font-size: 14px;
-padding: 20px;
-}
+    .ver-mais {
+        width: 40%;
+    }
 }
