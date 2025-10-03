@@ -11,9 +11,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('../images/fundo-preto-blur.png');
+    background-image: url('../images/fit-hub.png');
     background-size: cover;
     margin: 0;
+}
+
+.main-content {
+    flex: 1;
 }
 
 header {
@@ -56,6 +60,7 @@ header h2 a {
     align-items: center;
     font-size: 26px;
 }
+/* edu */
 
 header h2 a {
     color: inherit;
@@ -78,20 +83,22 @@ header h2 a {
 }
 
 .bloco-about {
-    max-width: 320px;
-    width: 100%;
-    height: auto;
+    max-width: 350px;
+    min-height: 380px;
+    width: 300px;
+    height: 400px;
     border-radius: 20px;
-    border-style: 4px solid white;
+    border-color: white;
+    border-style: solid;
+    border-width: 4px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 30px;
+    padding: 50px;
+    padding-top: 40px;
     align-items: center;
-    background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+    background-image: linear-gradient(rgba(20, 4, 37, 0.80), rgba(20, 4, 37, 0.80), rgba(68, 21, 99, 0.80));
     color: white;
     transition: transform 0.4s ease, box-shadow 0.2s ease;
-
 }
 
 .bloco-about h3 {
@@ -99,14 +106,15 @@ header h2 a {
     font-size: 25px;
     font-weight: bold;
     font-style: italic;
+    margin-top: 0;
 }
 
 .bloco-about p {
     font-family: 'Inter', sans-serif;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: normal;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 26px;
 }
 
 .bloco-about:hover {
@@ -124,7 +132,8 @@ footer {
     font-size: 17px;
 }
 
-/* ---------- RESPONSIVIDADE ---------- */
+
+/*- RESPONSIVIDADE - */
 
 /* Tablets grandes (até 1024px) */
 @media (max-width: 1024px) {
