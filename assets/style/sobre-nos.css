@@ -11,10 +11,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('../images/fundo-preto-blur.png');
+    background-image: url('../images/fit-hub.png');
     background-size: cover;
     margin: 0;
     min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
 }
 
 header {
@@ -52,29 +56,26 @@ header h2 i {
 
 .container-about-us {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    gap: clamp(20px, 5vw, 80px);
-    max-width: 1000px;
-    margin: 60px auto 0 auto;
+    gap: 120px;
+    max-width: 1200px;
+    margin: 100px auto 0 auto;
+    flex-wrap: nowrap;
 }
 
 .bloco-about {
-    max-width: 320px;
-    width: 100%;
+    max-width: 350px;
+    min-height: 380px;
+    width: 300px;
     height: auto;
     border-radius: 20px;
-    border-style: 4px solid white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 30px;
+    padding: 50px;
     align-items: center;
-    background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+    background-image: linear-gradient(rgba(20, 4, 37, 0.80), rgba(20, 4, 37, 0.80), rgba(68, 21, 99, 0.80));
     color: white;
     transition: transform 0.4s ease, box-shadow 0.2s ease;
-    
 }
 
 .bloco-about h3 {
@@ -107,7 +108,9 @@ footer {
     font-size: 17px;
 }
 
-/* ---------- RESPONSIVIDADE ---------- */
+
+
+/*- RESPONSIVIDADE - */
 
 /* Tablets grandes (até 1024px) */
 @media (max-width: 1024px) {
