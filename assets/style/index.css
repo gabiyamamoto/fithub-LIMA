@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 350px;
+    max-width: 370px;
     width: 100%;
     background: linear-gradient(135deg, #323232 0%, #2C2C2C 100%);
     color: white;
@@ -31,14 +31,16 @@ body {
     text-align: center;
     font-style: italic;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 40px;
+    cursor: context-menu;
 }
 
 .boas-vindas {
     text-align: center;
     width: 100%;
     margin-top: 3px;
-    font-size: 15px;
+    font-size: 20px;
+    cursor: context-menu;
 }
 
 .input-box {
@@ -50,12 +52,12 @@ body {
     width: 100%;
     border-radius: 12px;
     outline: none;
-    font-size: 13px;
+    font-size: 16px;
     padding: 8px 18px 8px;
 }
 
 .input-box label {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 10px;
     display: block
 }
@@ -64,7 +66,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .lembrar-senha label input {
@@ -78,27 +80,27 @@ body {
     align-items: center;
     margin: 24px auto 0 auto;
     width: 80%;
-    height: 30px;
+    height: 38px;
     background-color: #9041DE;
     border-radius: 30px;
-    font-size: 15px;
+    font-size: 18px;
     color: white;
     font-weight: 500;
-    text-decoration: none;
     text-align: center;
     transition: transform 0.4s ease, box-shadow 0.2s ease;
     cursor: pointer;
 }
 
 .login-button:hover {
-    transform: scale(1.08);
+    text-decoration: none;
+    transform: scale(1.02);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
 .cadastrar {
     text-align: center;
     margin: 20px 0 15px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .cadastrar a {
