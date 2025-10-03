@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color:rgb(198, 198, 198) ;
+  background:url(../images/fundo-preto-blur.png);
   background-size: cover;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
