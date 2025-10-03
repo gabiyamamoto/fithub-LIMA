@@ -23,7 +23,6 @@ header {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 70px;
 }
 
@@ -48,10 +47,6 @@ header h2 a {
     display: flex;
     align-items: center;
     gap: 8px;
-}
-
-header h2 a:hover {
-    text-decoration: underline;
 }
 
 .risquinhos {

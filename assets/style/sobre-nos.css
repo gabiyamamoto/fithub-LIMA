@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
@@ -14,7 +14,6 @@ body {
     background-image: url('../images/fit-hub.png');
     background-size: cover;
     margin: 0;
-    min-height: 100vh;
 }
 
 .main-content {
@@ -28,18 +27,15 @@ header {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    gap: clamp(40px, 8vw, 300px);
     margin-bottom: 70px;
 }
 
 header h2 {
     display: flex;
     align-items: center;
-    font-weight: 100;
-    cursor: pointer;
-    font-family: 'Bebas Neue', sans-serif;
     margin: 0 15px;
+    font-weight: 100;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header h2 i {
@@ -47,20 +43,42 @@ header h2 i {
     font-size: 20px;
 }
 
+header h2 a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .risquinhos {
     color: white;
     display: flex;
     cursor: pointer;
     align-items: center;
+    font-size: 26px;
+}
+
+header h2 a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .container-about-us {
     display: flex;
-    align-items: center;
-    gap: 120px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: clamp(20px, 5vw, 80px);
     max-width: 1200px;
-    margin: 100px auto 0 auto;
-    flex-wrap: nowrap;
+    margin: 60px auto 0 auto;
 }
 
 .bloco-about {
@@ -96,7 +114,7 @@ header h2 i {
 .bloco-about:hover {
     box-shadow: 0 0 35px rgb(255, 255, 255);
     transform: scale(1.02);
-    cursor:context-menu;
+    cursor: context-menu;
 }
 
 footer {
@@ -114,75 +132,62 @@ footer {
 
 /* Tablets grandes (até 1024px) */
 @media (max-width: 1024px) {
-header {
-flex-direction: row;
-justify-content: space-between;
-padding: 20px;
-}
+    header {
+        padding: 15px;
+    }
 
-.container-about-us {
-gap: 60px; /* mais espaço entre blocos */
-}
+    header h2 {
+        font-size: 22px;
+    }
 
-.bloco-about {
-max-width: 300px;
-padding: 25px;
-}
+    .risquinhos {
+        font-size: 24px;
+    }
 
-.bloco-about p {
-font-size: 17px;
-}
+    .container-about-us {
+        gap: 60px;
+    }
+
+    .bloco-about {
+        max-width: 300px;
+        padding: 25px;
+    }
+
+    .bloco-about p {
+        font-size: 17px;
+    }
 }
 
 /* Tablets médios e celulares grandes (até 768px) */
 @media (max-width: 768px) {
-header {
-flex-direction: column;
-align-items: center;
-gap: 15px;
-}
+    header {
+        flex-wrap: nowrap;
+        padding: 15px;
+    }
 
-header h2 {
-font-size: 18px;
-}
+    header h2 {
+        font-size: 18px;
+    }
 
-.container-about-us {
-flex-direction: column;
-gap: 40px;
-margin-top: 30px;
-}
+    .risquinhos {
+        font-size: 20px;
+    }
 
-.bloco-about {
-max-width: 90%;
-}
+    .container-about-us {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 30px;
+    }
 
-.bloco-about p {
-font-size: 16px;
-}
-}
+    .bloco-about {
+        max-width: 90%;
+    }
 
-/* Celulares pequenos (até 480px) */
-@media (max-width: 480px) {
-header {
-flex-direction: row;
-justify-content: space-between;
-padding: 15px;
-}
+    .bloco-about p {
+        font-size: 16px;
+    }
 
-header h2 {
-font-size: 16px;
-}
-
-.bloco-about h3 {
-font-size: 20px;
-}
-
-.bloco-about p {
-font-size: 15px;
-}
-
-footer {
-font-size: 14px;
-padding: 20px;
-}
+    footer {
+        font-size: 15px;
+    }
 }
