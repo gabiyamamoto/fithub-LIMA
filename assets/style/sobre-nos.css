@@ -85,11 +85,15 @@ header h2 a {
     max-width: 350px;
     min-height: 380px;
     width: 300px;
-    height: auto;
+    height: 400px;
     border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 4px;
     display: flex;
     flex-direction: column;
     padding: 50px;
+    padding-top: 40px;
     align-items: center;
     background-image: linear-gradient(rgba(20, 4, 37, 0.80), rgba(20, 4, 37, 0.80), rgba(68, 21, 99, 0.80));
     color: white;
@@ -101,14 +105,15 @@ header h2 a {
     font-size: 25px;
     font-weight: bold;
     font-style: italic;
+    margin-top: 0;
 }
 
 .bloco-about p {
     font-family: 'Inter', sans-serif;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: normal;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 26px;
 }
 
 .bloco-about:hover {
