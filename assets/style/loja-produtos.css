@@ -32,6 +32,7 @@ header h2 {
     margin: 0 15px;
     font-weight: 100;
     font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
 }
 
 header h2 i {
@@ -60,8 +61,8 @@ header h2 a {
 
 .quadrado-categoria {
     position: absolute;
-    top: 20px;
-    right: 170px;
+    top: 2%;
+    right: 12%;
     width: 330px;
     height: 360px;
     border-radius: 20px;
@@ -79,17 +80,17 @@ header h2 a {
     color: white;
     font-family: 'Inter', sans-serif;
     margin: 0;
+    line-height: 8px;
     font-size: 18px;
     display: flex;
     align-items: center;
     cursor: pointer;
-
 }
 
 .quadrado-categoria h2 {
     color: white;
     font-family: 'Bebas Neue', sans-serif;
-    margin-top: -60px;
+    margin-top: -70px;
     font-weight: 10;
     font-size: 25px;
     display: flex;
@@ -120,7 +121,6 @@ main {
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
-
 }
 
 .bloco-produto {
@@ -201,7 +201,7 @@ p:hover {
     border-radius: 21px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
     header {
         padding: 15px;
     }
@@ -211,13 +211,41 @@ p:hover {
     }
 
     .risquinhos {
-        top: 20px;
+        right: 37px;
+        font-size: 24px;
+    }
+
+    .quadrado-categoria {
+        right: 11vw;
+        top: 5px;
+    }
+
+    .container-produtos {
+        justify-content: center;
+    }
+    
+    .bloco-produto {
+        width: 45%;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    .risquinhos {
         right: 35px;
         font-size: 24px;
     }
 
     .quadrado-categoria {
-        right: 20px;
+        right: 7vw;
         width: 200px;
         top: 5px;
     }
