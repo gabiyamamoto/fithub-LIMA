@@ -7,6 +7,15 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+  background: url('../images/fundo-preto-blur.png') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  min-height: 100vh;
+  color: white;
+}
+
 header {
     background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
     color: white;
