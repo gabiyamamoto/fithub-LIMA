@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../images/fundo-login.png");
+  background-size: cover;
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(to right, #9041de, #703fc6, #6e09a3);
+  color: white;
+  padding: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+header h2 {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  font-weight: 100;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+header h2 i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+header h2 a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.risquinhos {
+  color: white;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-size: 26px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* max-width: 350px; */
+  width: 50%;
+  background: linear-gradient(135deg, #323232 0%, #2c2c2c 100%);
+  color: white;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+/* Estilo do card de usuário - visual escuro inspirado no print */
+.usuario-container {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 28px;
+  color: #fff;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* Form align */
+.usuario-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Título grande centralizado */
+.usuario-titulo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  margin: 4px 0 10px;
+}
+
+/* Nome principal com destaque (azul claro) e botão de editar */
+.usuario-nome-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.usuario-nome {
+  padding: 4px 10px;
+  color: #c0c0c0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: inset 0 -2px 0 rgba(100, 100, 100, 0.25);
+}
+
+/* Botão pequeno de editar (só icone) */
+.edit-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background 0.15s, transform 0.12s;
+}
+
+.edit-btn img {
+  display: block;
+  filter: invert(1) sepia(0) saturate(0) hue-rotate(240deg) brightness(1.2);
+  opacity: 0.95;
+}
+
+.edit-btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-1px);
+}
+
+/* Linha divisória sutil */
+.usuario-divisor {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.06),
+    transparent
+  );
+  margin: 10px 0 18px;
+}
+
+/* Grid de campos (duas colunas) */
+.usuario-campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 28px;
+}
+
+/* Cada campo (label + input/select) */
+.usuario-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Label pequeno */
+.usuario-campo label {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+/* Caixa que agrupa input + botão editar */
+.usuario-input-edit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.35),
+    rgba(255, 255, 255, 0.02)
+  );
+  border-radius: 6px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* Inputs e selects dentro do grupo */
+.usuario-input-edit input,
+.usuario-input-edit select {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #f5f5f5;
+  width: 100%;
+  font-size: 0.98rem;
+  font-weight: 500;
+  padding: 2px 0;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* Aparência de texto quando readonly */
+.usuario-input-edit input[readonly] {
+  color: #c4c4c4;
+  opacity: 0.95;
+}
+
+/* Input de senha com espaçamento de caracteres */
+.usuario-input-edit input[type="password"] {
+  letter-spacing: 2px;
+}
+
+/* Select com aparência compatível */
+.usuario-campo select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(0, 0, 0, 0.25)
+  );
+  color: #cfcfcf;
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+/* Pequeno ajuste para que o select ocupe o mesmo visual dos inputs */
+.usuario-campo select:focus,
+.usuario-input-edit input:focus {
+  box-shadow: 0 0 0 3px rgba(102, 192, 255, 0.06);
+}
+
+/* Responsividade - em telas pequenas, empilha campos em 1 coluna */
+@media (max-width: 720px) {
+  .usuario-container {
+    margin: 20px;
+    padding: 18px;
+  }
+  .usuario-campos {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .usuario-nome {
+    font-size: 1rem;
+  }
+}
+
+.usuario-container::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96%;
+  height: 0;
+  pointer-events: none;
+}
