@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../images/fundo-preto-blur.png');
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
+    color: white;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    margin-bottom: 70px;
+}
+
+header h2 {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    font-weight: 100;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header h2 i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+header h2 a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.risquinhos {
+    color: white;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 26px;
+}
+
+header h2 a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: clamp(20px, 5vw, 80px);
+    max-width: 1200px;
+    margin: 60px auto 0 auto;
+}
+
+.bloco-superior-A {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+}
+
+.bloco-superior-B {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+   background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+}
+
+.bloco-A {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+   background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+}
+
+.bloco-B {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+}
+
+.bloco-treino {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+   background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+}
+
+.bloco-completo {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+   background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+}
+
