@@ -11,9 +11,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('../images/fundo-preto-blur.png');
+    background-image: url('../images/fit-hub.png');
     background-size: cover;
     margin: 0;
+}
+
+.main-content {
+    flex: 1;
 }
 
 header {
@@ -78,20 +82,18 @@ header h2 a {
 }
 
 .bloco-about {
-    max-width: 320px;
-    width: 100%;
+    max-width: 350px;
+    min-height: 380px;
+    width: 300px;
     height: auto;
     border-radius: 20px;
-    border-style: 4px solid white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 30px;
+    padding: 50px;
     align-items: center;
-    background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+    background-image: linear-gradient(rgba(20, 4, 37, 0.80), rgba(20, 4, 37, 0.80), rgba(68, 21, 99, 0.80));
     color: white;
     transition: transform 0.4s ease, box-shadow 0.2s ease;
-
 }
 
 .bloco-about h3 {
@@ -124,7 +126,9 @@ footer {
     font-size: 17px;
 }
 
-/* ---------- RESPONSIVIDADE ---------- */
+
+
+/*- RESPONSIVIDADE - */
 
 /* Tablets grandes (até 1024px) */
 @media (max-width: 1024px) {
