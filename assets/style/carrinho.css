@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -102,7 +104,13 @@
     border-color: rgb(255, 255, 255);
     border-width: 4px;
     justify-content: space-between;
-    padding: 20px;
+    padding: 2px;
     margin-bottom: 2px;
     transition: transform 0.4s ease, box-shadow 0.2s ease;
+    align-items: center;
+    margin: 0 auto;
   }
+
+  
+
+
