@@ -36,6 +36,7 @@ header h2 {
     margin: 0 15px;
     font-weight: 100;
     font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
 }
 
 header h2 i {
@@ -177,14 +178,26 @@ footer {
         flex-direction: column;
         gap: 40px;
         margin-top: 30px;
+        width: 100vw;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .bloco-about {
-        max-width: 90%;
+        max-width: 500px;
+        width: 55vw;
+        padding: 40px 35px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .bloco-about h3 {
+        font-size: 22px;
     }
 
     .bloco-about p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     footer {
