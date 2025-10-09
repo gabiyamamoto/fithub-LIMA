@@ -71,8 +71,7 @@ header h2 a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
-    gap: clamp(20px, 5vw, 80px);
+    gap: 50px;
     max-width: 1200px;
     margin: 60px auto 0 auto;
 }
@@ -85,20 +84,28 @@ header h2 a {
     padding: 30px;
     background-color: #d3c6e093;
     justify-items: center;
-    line-height: 35px;
+    margin-bottom: 15px;
+}
+
+#nome {
+     width: 100%;
+    padding: 10px;
+    margin: 10px;
 }
 
 .botão {
+display: flex;
+margin-bottom: 12px;
 background-color: #e5beffcb;
-justify-items: center;
- border-radius: 20px;
+justify-content: center;
+border-radius: 20px;
 width: 300px;
 }
 
 .botão:hover {
     transform: scale(1.02);
     cursor: context-menu;
-     background-color: rgb(110, 10, 192);
+     background-color: #6e0ac0;
     transform: translateX(5px);
     transition: all 0.3s ease;
 }
@@ -111,4 +118,150 @@ width: 300px;
     padding: 30px;
     background-color: #d3c6e093;
     justify-items: center;
+    line-height: 35px;
+}
+
+.bloco-finalização {
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    background-color: #d3c6e093;
+    justify-items: center;
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.produto img {
+    width: 50px;
+    height: 50px;
+}
+
+#cep {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*- RESPONSIVIDADE - */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+/* HEADER - Estilo Mobile */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+header h2 {
+    font-size: 1.1em;
+}
+
+header a {
+    text-decoration: none;
+}
+/* MAIN - Layout Empilhado (Mobile) */
+main {
+    padding: 20px;
+}
+
+.container-compras {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.bloco-identificação,
+.bloco-pagamento,
+.bloco-finalização {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo do Produto */
+.produto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+
+.produto img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.produto h4 {
+    flex-grow: 1; 
+}
+
+/* Estilo dos Botões e Inputs */
+.botão {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.input-box input,
+#cep {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+/* ---------------------------------------------------- */
+/* MEDIA QUERY PARA TELAS GRANDES (COMPUTADOR/TABLET) */
+/* ---------------------------------------------------- */
+
+@media (min-width: 768px) {
+    
+    /* HEADER: Layout de Desktop */
+    header {
+        justify-content: space-around;
+    }
+
+    /* Mostra todos os links de navegação */
+    header h2 {
+        display: block !important; 
+    }
+
+    /* Esconde o ícone de hambúrguer */
+    .risquinhos,
+    header section {
+        display: none;
+    }
+
+    /* MAIN: Layout Lado a Lado (Colunas) */
+    .container-compras {
+        flex-direction: row; 
+        align-items: flex-start;
+    }
 }
