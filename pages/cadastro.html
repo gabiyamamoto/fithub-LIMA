@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitHub - Cadastro</title>
+  <link rel="stylesheet" href="../assets/style/cadastro.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <header class="card-header">
+        <h1>FITHUB</h1>
+        <p>Bem-vindo(a) ao FitHub!</p>
+      </header>
+
+      <form class="form">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Ex: erlo.juu@gmail.com" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" placeholder="Ex: Julia Miranda" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="********" required />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmar">Confirme sua senha</label>
+            <input type="password" id="confirmar" placeholder="********" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="unidade">Unidade</label>
+          <select id="unidade" required>
+            <option selected disabled>Selecione a unidade</option>
+            <option value="Unidade1">Unidade 1</option>
+            <option value="Unidade2">Unidade 2</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary">Cadastrar-se</button>
+      </form>
+
+      <footer class="card-footer">
+        <a href="login.html" class="login-link">Fazer login</a>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
