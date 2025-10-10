@@ -55,7 +55,7 @@ O projeto foi criado como parte da unidade curricular de **Linguagem de Marcaç�
 | **Júlia Miranda** | Telas de Sobre Nós e Loja de Produtos |
 | **Maria Eduarda Andrade** | Telas de Suporte e Chat com o Personal/Profissionais |
 | **Ana Cremasco** | Telas de Carrinho e Treinos |
-| **Daniel** | Tela de Cadastro (e funcionalidade em desenvolvimento) |
+| **Daniel** | Tela de Cadastro e Usuário |
 
 ### 🛠️ Tecnologias Utilizadas
 
