@@ -24,7 +24,7 @@ A FitHub é uma academia dedicada à promoção de saúde, bem-estar e qualidade
 
 A paleta de cores e a tipografia foram selecionadas para transmitir **energia, modernidade e profissionalismo**.
 
-* **Paleta de Cores:** **Preto**, **Branco** e **Roxo** (`#6A2ACF`) para destaque e CTAs.
+* **Paleta de Cores:** **Preto**, **Branco** e **Roxo** (`#6A2ACF`) para destacar e chamar para a ação.
 * **Tipografia:** Fontes limpas e contemporâneas.
 * **Elementos:** Botões arredondados e espaçamento consistente para alta legibilidade.
 
