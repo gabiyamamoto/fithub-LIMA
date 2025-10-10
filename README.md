@@ -2,15 +2,15 @@
 
 ## 📘 Sobre o Projeto
 
-O **FitHub** é o website oficial desenvolvido para a **FitHub Academia**, visando estabelecer uma presença digital robusta, moderna e acessível para seus alunos e potenciais clientes.
+O **FitHub** é o website oficial desenvolvido para a **FitHub Academia**, visando estabelecer uma presença digital robusta, moderna e acessível para alunos e potenciais clientes.
 
-O projeto foi construído para refletir a identidade visual e os valores da academia, apresentando seus serviços, equipe profissional e produtos de forma intuitiva e organizada. O foco principal foi na **usabilidade**, no **design responsivo** e na **coerência visual**, utilizando exclusivamente **HTML** e **CSS**.
+O projeto foi construído para refletir a identidade visual e os valores da academia, apresentando seus serviços, equipe e produtos de forma intuitiva. O foco principal foi na **usabilidade**, no **design responsivo** e na **coerência visual**, utilizando exclusivamente **HTML** e **CSS**.
 
 ---
 
 ## 🏢 FitHub Academia: Identidade e Valores
 
-A FitHub é uma academia dedicada à promoção de saúde, bem-estar e qualidade de vida. Seu ambiente acolhedor e inspirador visa motivar cada aluno a alcançar seus objetivos pessoais.
+A FitHub é uma academia dedicada à promoção de saúde, bem-estar e qualidade de vida.
 
 | Categoria | Descrição |
 | :--- | :--- |
@@ -22,27 +22,24 @@ A FitHub é uma academia dedicada à promoção de saúde, bem-estar e qualidade
 
 ## 🎨 Identidade Visual
 
-A paleta de cores e a tipografia foram selecionadas para transmitir **energia, modernidade e profissionalismo**, garantindo legibilidade e alto contraste.
+A paleta de cores e a tipografia foram selecionadas para transmitir **energia, modernidade e profissionalismo**.
 
-* **Paleta de Cores:**
-    * **Preto:** Tipografia, áreas de destaque e fundo secundário.
-    * **Branco:** Fundo primário e espaçamento.
-    * **Roxo** (`#6A2ACF`): Cor de destaque e chamadas para ação (CTAs).
-* **Tipografia:** Fontes limpas e contemporâneas, otimizadas para leitura em telas.
-* **Elementos:** Botões com forma arredondada, *cards* para produtos e espaçamento consistente para melhorar a escaneabilidade.
+* **Paleta de Cores:** **Preto**, **Branco** e **Roxo** (`#6A2ACF`) para destaque e CTAs.
+* **Tipografia:** Fontes limpas e contemporâneas.
+* **Elementos:** Botões arredondados e espaçamento consistente para alta legibilidade.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 💼 Agência Desenvolvedora — TechNova Solutions
 
-O projeto foi desenvolvido com foco em tecnologias essenciais para o *Front-End* e controle de versão:
+A **TechNova Solutions** é a agência digital responsável pela criação deste site. Somos especializados em sites e interfaces modernas, unindo **design e funcionalidade** para transformar ideias em experiências digitais completas.
 
-| Tecnologia | Finalidade |
-| :--- | :--- |
-| **HTML5** | Estrutura semântica das páginas. |
-| **CSS3** | Estilização, layout e responsividade. |
-| **Git & GitHub** | Controle de versão, colaboração e hospedagem do código. |
-| **Visual Studio Code** | Ambiente de desenvolvimento. |
+### Foco no Desenvolvimento do FitHub:
+
+* Transmitir os **valores e a essência** da academia por meio do design.
+* Criar um **layout harmônico e responsivo**.
+* Garantir **fácil navegação** entre as páginas.
+* Manter um **padrão visual coerente** em todo o site.
 
 ---
 
@@ -50,19 +47,7 @@ O projeto foi desenvolvido com foco em tecnologias essenciais para o *Front-End*
 
 O projeto foi criado como parte da unidade curricular de **Linguagem de Marcação (LIMA)**.
 
-* **Fases do Processo:**
-    * Criação das estruturas semânticas em HTML.
-    * Estilização e responsividade com CSS.
-    * Organização modular dos arquivos.
-    * Colaboração via GitHub (commits individuais e *pull requests*).
-* **Foco Principal:**
-    * Transmissão dos valores e essência da FitHub através do design.
-    * Criação de um *layout* harmonioso e **responsivo**.
-    * Garantia de fácil navegação (*user experience*).
-
 ### 👩‍💻 Equipe de Desenvolvimento
-
-O site foi desenvolvido por uma equipe de 5 integrantes, com especialização em **Desenvolvimento Front-End**:
 
 | Membro da Equipe | Responsabilidades |
 | :--- | :--- |
@@ -70,26 +55,38 @@ O site foi desenvolvido por uma equipe de 5 integrantes, com especialização em
 | **Júlia Miranda** | Telas de Sobre Nós e Loja de Produtos |
 | **Maria Eduarda Andrade** | Telas de Suporte e Chat com o Personal/Profissionais |
 | **Ana Cremasco** | Telas de Carrinho e Treinos |
-| **Daniel** | Tela de Cadastro e |
+| **Daniel** | Tela de Cadastro (e funcionalidade em desenvolvimento) |
+
+### 🛠️ Tecnologias Utilizadas
+
+* **HTML5** (Estrutura semântica)
+* **CSS3** (Estilização e Responsividade)
+* **Git & GitHub** (Controle de Versão e Colaboração)
+* **Visual Studio Code** (Ambiente de Desenvolvimento)
+
+---
+
+## ⚠️ Desafios e Aprendizados
+
+Durante o desenvolvimento, nossa equipe enfrentou alguns desafios, incluindo:
+
+* **Merge Conflicts no GitHub**: quando mais de um integrante alterou arquivos similares (ex.: imagens PNG, CSS, HTML), precisávamos resolver conflitos manualmente.
+* **Alinhamento de responsividade**: garantir que todas as telas funcionassem bem em diferentes resoluções de tela exigiu ajustes finos no CSS.
+* **Padronização de estilo**: unificar cores, fontes e espaçamentos entre as páginas para manter consistência visual.
 
 ---
 
 ## 🔗 Repositório do Projeto
 
-Você pode acessar o código-fonte completo e acompanhar o histórico de *commits* e *releases* no GitHub:
+Acesse o código-fonte completo:
 
 > [https://github.com/gabiyamamoto/fithub-LIMA.git](https://github.com/gabiyamamoto/fithub-LIMA.git)
 
 ---
 
-## 💼 Agência Desenvolvedora
+## 🎯 Conclusão
 
-O projeto FitHub foi entregue pela **TechNova Solutions**.
-
-* **TechNova Solutions:** Agência digital especializada em criação de sites e interfaces modernas que unem design e funcionalidade para transformar ideias em experiências digitais completas e alinhadas à identidade do cliente.
-
----
-
+O desenvolvimento do FitHub foi uma excelente oportunidade para aplicar, de forma prática e colaborativa, os conceitos de marcação e estilo. O resultado é um site **funcional, coeso e profissional** que traduz a identidade da FitHub Academia.
 ## 🎯 Conclusão
 
 O desenvolvimento do FitHub permitiu a aplicação prática dos conceitos de Linguagem de Marcação, fortalecendo as habilidades em HTML, CSS e Git/GitHub. O resultado é um site **funcional, responsivo e visualmente coeso**, que representa com clareza e profissionalismo a identidade e os valores da FitHub Academia.
