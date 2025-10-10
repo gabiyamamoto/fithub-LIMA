@@ -70,7 +70,7 @@ O projeto foi criado como parte da unidade curricular de **Linguagem de Marcaç�
 
 Durante o desenvolvimento, nossa equipe enfrentou alguns desafios, incluindo:
 
-* **Merge Conflicts no GitHub**: quando mais de um integrante alterou arquivos similares (ex.: imagens PNG, CSS, HTML), precisávamos resolver conflitos manualmente.
+* **Merge Conflicts no GitHub**: quando mais de um integrante alterou arquivos similares (ex: imagens PNG, CSS, HTML), precisávamos resolver conflitos manualmente.
 * **Alinhamento de responsividade**: garantir que todas as telas funcionassem bem em diferentes resoluções de tela exigiu ajustes finos no CSS.
 * **Padronização de estilo**: unificar cores, fontes e espaçamentos entre as páginas para manter consistência visual.
 
@@ -84,9 +84,6 @@ Acesse o código-fonte completo:
 
 ---
 
-## 🎯 Conclusão
-
-O desenvolvimento do FitHub foi uma excelente oportunidade para aplicar, de forma prática e colaborativa, os conceitos de marcação e estilo. O resultado é um site **funcional, coeso e profissional** que traduz a identidade da FitHub Academia.
 ## 🎯 Conclusão
 
 O desenvolvimento do FitHub permitiu a aplicação prática dos conceitos de Linguagem de Marcação, fortalecendo as habilidades em HTML, CSS e Git/GitHub. O resultado é um site **funcional, responsivo e visualmente coeso**, que representa com clareza e profissionalismo a identidade e os valores da FitHub Academia.
