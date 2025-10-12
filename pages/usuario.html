@@ -1,149 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Usuario</title>
-    <link rel="stylesheet" href="../assets/style/usuario.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  
-  <body>
-    <header>
-      <h2><a href="home.html"><i class="fas fa-home"></i>Home</a></h2>
-      <h2><a href="loja-produtos.html"><i class="fas fa-shopping-cart"></i>Loja</a></h2>
-      <h2><a href="chatProfissional.html"><i class="fas fa-comments"></i>Bate-papo</a></h2>
-      <h2><a href="treinos.html"><i class="fas fa-dumbbell"></i>Treinos</a></h2>
-      <div class="risquinhos">
-        <svg
-          width="28"
-          height="22"
-          viewBox="0 0 28 22"
-          style="vertical-align: middle; margin-left: 8px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect y="0" width="28" height="2" rx="1" fill="currentColor" />
-          <rect y="9" width="28" height="2" rx="1" fill="currentColor" />
-          <rect y="18" width="28" height="2" rx="1" fill="currentColor" />
-        </svg>
-      </div>
-    </header>
 
-    <main class="container">
-      <div class="usuario-container">
-        <form class="usuario-form" novalidate>
-          <h1 class="usuario-titulo">FITHUB</h1>
-          <div class="usuario-nome-edit">
-            <span class="usuario-nome">Julia Erlo</span>
-            <button
-              type="button"
-              class="edit-btn"
-              aria-label="Editar nome principal"
-            >
-              <img src="../assets/images/edit.png" alt="" height="18" />
-            </button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usuário</title>
+  <link rel="stylesheet" href="../assets/style/usuario.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
 
-          <hr class="usuario-divisor" />
-          <div class="usuario-campos">
-            <div class="usuario-campo">
-              <label for="nome">Nome completo</label>
-              <div class="usuario-input-edit">
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  value="Julia Miranda"
-                  readonly
-                />
-                <button type="button" class="edit-btn" aria-label="Editar nome">
-                  <img src="../assets/images/edit.png" alt="" height="16" />
-                </button>
-              </div>
-            </div>
-            <div class="usuario-campo">
-              <label for="telefone">Telefone</label>
-              <div class="usuario-input-edit">
-                <input
-                  type="text"
-                  id="telefone"
-                  name="telefone"
-                  value="(XX) XXXXX-XXXX"
-                  readonly
-                />
-                <button
-                  type="button"
-                  class="edit-btn"
-                  aria-label="Editar telefone"
-                >
-                  <img src="../assets/images/edit.png" alt="" height="16" />
-                </button>
-              </div>
-            </div>
+<body>
+  <header>
 
-            <div class="usuario-campo">
-              <label for="email">E-mail</label>
-              <div class="usuario-input-edit">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value="julia.erlo@gmail.com"
-                  readonly
-                />
-                <button
-                  type="button"
-                  class="edit-btn"
-                  aria-label="Editar e-mail"
-                >
-                  <img src="../assets/images/edit.png" alt="" height="16" />
-                </button>
-              </div>
-            </div>
+    <h2><a href="home.html"><i class="fas fa-home"></i>Home</a></h2>
+    <h2><a href="loja-produtos.html"><i class="fas fa-shopping-cart"></i>Loja</a></h2>
+    <h2><a href="chatProfissional.html"><i class="fas fa-comments"></i>Bate-papo</a></h2>
+    <h2><a href="treinos.html"><i class="fas fa-dumbbell"></i>Treinos</a></h2>
 
-            <div class="usuario-campo">
-              <label for="unidade">Unidade</label>
-              <select
-                id="unidade"
-                name="unidade"
-                aria-label="Selecione a unidade"
-              >
-                <option>Selecione a unidade</option>
-              </select>
-            </div>
-            <div class="usuario-campo">
-              <label for="senha">Senha</label>
-              <div class="usuario-input-edit">
-                <input
-                  type="password"
-                  id="senha"
-                  name="senha"
-                  value="********"
-                  readonly
-                />
-                <button
-                  type="button"
-                  class="edit-btn"
-                  aria-label="Editar senha"
-                >
-                  <img src="../assets/images/edit.png" alt="" height="16" />
-                </button>
-              </div>
+    <div class="risquinhos">
+      <svg width="28" height="22" viewBox="0 0 28 22" style="vertical-align:middle; margin-left:8px;"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect y="0" width="28" height="2" rx="1" fill="currentColor" />
+        <rect y="9" width="28" height="2" rx="1" fill="currentColor" />
+        <rect y="18" width="28" height="2" rx="1" fill="currentColor" />
+      </svg>
+    </div>
+
+  </header>
+
+  <main class="container">
+    <div class="usuario-container">
+      <form class="usuario-form" novalidate>
+        <h1 class="usuario-titulo">FITHUB</h1>
+        <div class="usuario-nome-edit">
+          <span class="usuario-nome">Julia Miranda</span>
+        </div>
+
+        <hr class="usuario-divisor" />
+        <div class="usuario-campos">
+          <div class="usuario-campo">
+            <label for="nome">Nome completo</label>
+            <div class="usuario-input-edit">
+              <input type="text" id="nome" name="nome" value="Julia Miranda" readonly />
+              <button type="button" class="edit-btn" aria-label="Editar nome">
+                <img src="../assets/images/edit.png" alt="" height="16" />
+              </button>
             </div>
           </div>
-        </form>
-      </div>
-    </main>
-  </body>
+          <div class="usuario-campo">
+            <label for="telefone">Telefone</label>
+            <div class="usuario-input-edit">
+              <input type="text" id="telefone" name="telefone" value="(XX) XXXXX-XXXX" readonly />
+              <button type="button" class="edit-btn" aria-label="Editar telefone">
+                <img src="../assets/images/edit.png" alt="" height="16" />
+              </button>
+            </div>
+          </div>
+
+          <div class="usuario-campo">
+            <label for="email">E-mail</label>
+            <div class="usuario-input-edit">
+              <input type="email" id="email" name="email" value="julia.erlo@gmail.com" readonly />
+              <button type="button" class="edit-btn" aria-label="Editar e-mail">
+                <img src="../assets/images/edit.png" alt="" height="16" />
+              </button>
+            </div>
+          </div>
+
+          <div class="usuario-campo">
+            <label for="unidade">Unidade</label>
+            <select id="unidade" name="unidade" aria-label="Selecione a unidade">
+              <option>Selecione a unidade</option>
+            </select>
+          </div>
+          <div class="usuario-campo">
+            <label for="senha">Senha</label>
+            <div class="usuario-input-edit">
+              <input type="password" id="senha" name="senha" value="********" readonly />
+              <button type="button" class="edit-btn" aria-label="Editar senha">
+                <img src="../assets/images/edit.png" alt="" height="16" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <a href="home.html" class="salvar-button">Salvar alterações</a>
+
+      </form>
+    </div>
+  </main>
+</body>
+
 </html>
