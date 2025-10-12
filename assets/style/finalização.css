@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('../images/fundo-preto-blur.png');
+    background-image: url('../images/fundo-preto-loja.png');
     background-size: cover;
     margin: 0;
 }
@@ -32,6 +32,7 @@ header h2 {
     margin: 0 15px;
     font-weight: 100;
     font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
 }
 
 header h2 i {
@@ -57,16 +58,6 @@ header h2 a {
     font-size: 26px;
 }
 
-header h2 a {
-    color: inherit;
-    text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 100;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
 .container-compras {
     display: flex;
     justify-content: center;
@@ -76,61 +67,101 @@ header h2 a {
     margin: 60px auto 0 auto;
 }
 
-.bloco-identificação {
+.bloco-identificacao,
+.bloco-pagamento,
+.bloco-finalizacao {
     width: 450px;
     height: auto;
+    border: 4px solid white;
     border-radius: 20px;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-    background-color: #d3c6e093;
-    justify-items: center;
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 30px;
+    align-items: center;
+    background-image: linear-gradient(rgba(20, 4, 37, 0.80), rgba(20, 4, 37, 0.80), rgba(68, 21, 99, 0.80));
+    color: white;
+    transition: transform 0.4s ease, box-shadow 0.2s ease;
 }
 
-#nome {
-     width: 100%;
-    padding: 10px;
-    margin: 10px;
+.bloco-finalizacao {
+    line-height: 35px;
+    justify-content: space-around;
+}
+
+.bloco-identificacao h2,
+.bloco-pagamento h2,
+.bloco-finalizacao h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    padding: 20px;
+    cursor: context-menu;
+}
+
+p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+    cursor: context-menu;
+}
+
+.email {
+    padding-bottom: 10px;
+}
+
+.escolher {
+    padding-bottom: 10px;
+}
+
+.input-box-cep,
+.input-box-email {
+    width: 100%;
+    margin: 8px 0;
+}
+
+.input-box-cep input,
+.input-box-email input {
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 18px 8px;
 }
 
 .botão {
-display: flex;
-margin-bottom: 12px;
-background-color: #e5beffcb;
-justify-content: center;
-border-radius: 20px;
-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 300px;
+    height: 38px;
+    background-color: #9041DE;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    font-weight: 450;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
 .botão:hover {
     transform: scale(1.02);
-    cursor: context-menu;
-     background-color: #6e0ac0;
-    transform: translateX(5px);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.bloco-pagamento {
-    width: 400px;
-    height: auto;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-    background-color: #d3c6e093;
-    justify-items: center;
-    line-height: 35px;
-}
-
-.bloco-finalização {
-    width: 450px;
-    height: auto;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-    background-color: #d3c6e093;
-    justify-items: center;
-    margin-bottom: 15px;
-    justify-content: space-around;
+.botão h3 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    cursor: pointer;
 }
 
 .produto {
@@ -138,74 +169,6 @@ width: 300px;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-}
-
-.produto img {
-    width: 50px;
-    height: 50px;
-}
-
-#cep {
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-}
-
-/*- RESPONSIVIDADE - */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f4f4f4;
-}
-
-
-/* HEADER - Estilo Mobile */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-header h2 {
-    font-size: 1.1em;
-}
-
-header a {
-    text-decoration: none;
-}
-/* MAIN - Layout Empilhado (Mobile) */
-main {
-    padding: 20px;
-}
-
-.container-compras {
-    display: flex;
-    flex-direction: column; 
-    gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.bloco-identificação,
-.bloco-pagamento,
-.bloco-finalização {
-    flex: 1;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* Estilo do Produto */
-.produto {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     margin: 10px 0;
     padding-bottom: 10px;
 }
@@ -216,52 +179,39 @@ main {
     object-fit: contain;
 }
 
+.container-compras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
 .produto h4 {
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
-/* Estilo dos Botões e Inputs */
-.botão {
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 10px 0;
-}
+@media (max-width: 1024px) {
+    header {
+        padding: 15px;
+    }
 
-.input-box input,
-#cep {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 4px;
-}
+    header h2 {
+        font-size: 22px;
+    }
 
-/* ---------------------------------------------------- */
-/* MEDIA QUERY PARA TELAS GRANDES (COMPUTADOR/TABLET) */
-/* ---------------------------------------------------- */
+    .risquinhos {
+        font-size: 24px;
+    }
+}
 
 @media (min-width: 768px) {
-    
-    /* HEADER: Layout de Desktop */
     header {
-        justify-content: space-around;
+        flex-wrap: nowrap;
     }
 
-    /* Mostra todos os links de navegação */
-    header h2 {
-        display: block !important; 
-    }
-
-    /* Esconde o ícone de hambúrguer */
-    .risquinhos,
-    header section {
-        display: none;
-    }
-
-    /* MAIN: Layout Lado a Lado (Colunas) */
     .container-compras {
-        flex-direction: row; 
+        flex-direction: row;
         align-items: flex-start;
     }
 }

@@ -1,92 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finalização</title>
-     <link rel="stylesheet" href="../assets/style/finalização.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Finalizar compra</title>
+    <link rel="stylesheet" href="../assets/style/finalização.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
 
         <h2><a href="home.html"><i class="fas fa-home"></i>Home</a></h2>
         <h2><a href="loja-produtos.html"><i class="fas fa-shopping-cart"></i>Loja</a></h2>
-        <h2><i class="fas fa-comments"></i>Bate-papo</h2>
-        <h2><i class="fas fa-dumbbell"></i>Treinos</h2>
+        <h2><a href="chatProfissional.html"><i class="fas fa-comments"></i>Bate-papo</a></h2>
+        <h2><a href="treinos.html"><i class="fas fa-dumbbell"></i>Treinos</a></h2>
 
-         <section>
+        <div class="risquinhos">
+            <svg width="28" height="22" viewBox="0 0 28 22" style="vertical-align:middle; margin-left:8px;"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="0" width="28" height="2" rx="1" fill="currentColor" />
+                <rect y="9" width="28" height="2" rx="1" fill="currentColor" />
+                <rect y="18" width="28" height="2" rx="1" fill="currentColor" />
+            </svg>
+        </div>
 
-            <div class="risquinhos">
-
-                <svg width="28" height="22" viewBox="0 0 28 22" style="vertical-align:middle; margin-left:8px;"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect y="0" width="28" height="2" rx="1" fill="currentColor" />
-                    <rect y="9" width="28" height="2" rx="1" fill="currentColor" />
-                    <rect y="18" width="28" height="2" rx="1" fill="currentColor" />
-                </svg>
-            </div>
-        </section>
     </header>
 
     <main>
         <form>
-            <div class = "container-compras">
+            <div class="container-compras">
 
-                <div class = "bloco-identificação">
+                <div class="bloco-identificacao">
                     <h2>1. Identificação</h2>
-                    <p>Informe seu e-mail ou CPF para continuar</p>
-                    <div class="input-box">
-               <input type="email" id="nome" placeholder="E-mail ou CPF" name="nome" required />
+                    <p class="email">Informe seu e-mail ou CPF para continuar</p>
+                    <div class="input-box-email">
+                        <input type="email" placeholder="E-mail ou CPF" name="nome" required />
                     </div>
                     <div class="botão">
-               <h3>Continuar</h3>
-               </div>
-               <p>Seus dados pessoais estão protegidos, todas as informações são obrigatórias para sua segurança</p>
+                        <h3>Continuar</h3>
+                    </div>
+                    <p>Seus dados pessoais estão protegidos, todas as informações são obrigatórias para sua segurança
+                    </p>
                 </div>
 
                 <div class="bloco-pagamento">
                     <h2>2. Pagamento</h2>
-                    <p>Escolha a forma de pagamento</p>
-                        <div class="botão">
-                    <h3>Cartão de crédito</h3>
-                        </div>
-                     <div class="botão">
-                    <h3>Pix</h3>
-                        </div>
-                     <div class="botão">
-                    <h3>Boleto</h3>
-                        </div>
+                    <p class="escolher">Escolha a forma de pagamento</p>
+                    <div class="botão">
+                        <h3>Cartão de crédito</h3>
                     </div>
+                    <div class="botão">
+                        <h3>Pix</h3>
+                    </div>
+                    <div class="botão">
+                        <h3>Boleto</h3>
+                    </div>
+                </div>
 
-                     <div class="bloco-finalização">
+                <div class="bloco-finalizacao">
                     <h2>3. Finalização</h2>
-                        <div class="produto">
-                             <img src="../assets/images/whey.png" alt="Whey Protein Concentrado (1KG)">
-                    <h4>Whey Protein Concentrado (1KG)</h4>
-                    <p>R$114,99</p>
-                        </div>
-                        <div class="produto">
-                    <img src="../assets/images/suplemento.png" alt="Panic Pré Treino Ponche De Frutas 300g">
-                    <h4>Panic Pré Treino Ponche De Frutas 300g</h4>
-                    <p>R$69,99</p>
-                        </div>
-                        <div class="produto">
-                    <img src="../assets/images/creatina.png" alt="Suplemento em Pó Creatina 300g">
-                    <h4>Suplemento em Pó Creatina 300g</h4>
-                    <p>R$69,99</p>
-                        </div>
-                    <p>Subtotal: R$:399,99</p>
-                    <label for="cep">Frete:</label>
-                    <input type="text" id="cep" placeholder="Digite seu CEP">
+                    <div class="produto">
+                        <img src="../assets/images/whey.png" alt="Whey Protein Concentrado (1KG)">
+                        <h4>Whey Protein Concentrado (1KG)</h4>
+                        <p>R$114,99</p>
+                    </div>
+                    <div class="produto">
+                        <img src="../assets/images/suplemento.png" alt="Panic Pré Treino Ponche De Frutas 300g">
+                        <h4>Panic Pré Treino Ponche De Frutas 300g</h4>
+                        <p>R$69,99</p>
+                    </div>
+                    <div class="produto">
+                        <img src="../assets/images/creatina.png" alt="Suplemento em Pó Creatina 300g">
+                        <h4>Suplemento em Pó Creatina 300g</h4>
+                        <p>R$69,99</p>
+                    </div>
+                    <p>Subtotal: R$259,88</p>
+                    <label for="cep">Calcular frete:</label>
+                    <div class="input-box-cep">
+                        <input type="text" id="cep" placeholder="Digite seu CEP">
+                    </div>
 
                     <div class="botão">
-                    <h3>Finalizar</h3>
+                        <h3>Finalizar compra</h3>
                     </div>
-                    </div>
+                </div>
             </div>
         </form>
     </main>
 </body>
+
 </html>
