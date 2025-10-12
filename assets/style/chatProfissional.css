@@ -1,56 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  background: url('../images/fundo-fithub.png') no-repeat center center fixed;
-  background-size: cover;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  color: white;
+  background-image: url('../images/fundo-preto-loja.png');
+  background-size: cover;
+  margin: 0;
 }
 
 header {
-    background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
-    color: white;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 300px;
+  background-image: linear-gradient(to right, #9041DE, #703FC6, #6E09A3);
+  color: white;
+  padding: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  margin-bottom: 30px;
 }
 
 header h2 {
-    display: flex;
-    align-items: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  font-weight: 100;
+  font-family: 'Bebas Neue', sans-serif;
+  cursor: pointer;
 }
 
 header h2 i {
-    margin-right: 8px;
+  margin-right: 8px;
+  font-size: 20px;
 }
 
+header h2 a {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.risquinhos {
+  color: white;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-size: 26px;
+}
 
 .chat-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: calc(100vh - 120px);
-  padding: 20px;
+  padding: 5px 60px 50px 60px;
   gap: 20px;
 }
 
 .lista {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(135deg, #323232 0%, #2C2C2C 100%);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -59,23 +78,24 @@ header h2 i {
 
 .lista h3 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-weight: 10;
+  text-align: center;
   color: white;
+  font-size: 25px;
 }
 
 .usuario {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 10px;
-  border-radius: 8px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s;
-  color: white;
-  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
 }
 
 .usuario:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ccb3e6
 }
 
 .ativo {
@@ -84,8 +104,8 @@ header h2 i {
 }
 
 .chat {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 12px;
+  background: linear-gradient(135deg, #323232 0%, #2C2C2C 100%);
+  border-radius: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -110,7 +130,7 @@ header h2 i {
 }
 
 .perfil h4 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: white;
 }
@@ -128,19 +148,23 @@ header h2 i {
 .mensagem {
   max-width: 60%;
   padding: 10px 15px;
-  border-radius: 12px;
+  border-radius: 25px;
   font-size: 14px;
   word-wrap: break-word;
 }
 
 .recebida {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #9041DE;
   align-self: flex-start;
+  color: white;
+  font-size: 16px;
 }
 
 .enviada {
   background-color: #9041DE;
   align-self: flex-end;
+  color: white;
+  font-size: 16px;
 }
 
 .inputBox {
@@ -152,8 +176,8 @@ header h2 i {
 
 .inputBox input {
   flex: 1;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 15px 15px 15px 30px;
+  border-radius: 20px;
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
@@ -169,7 +193,7 @@ header h2 i {
   background-color: #9041DE;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
   white-space: nowrap;
@@ -185,13 +209,13 @@ header h2 i {
     height: auto;
     padding: 10px;
   }
-  
+
   header {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
+
   .inputBox {
     flex-direction: column;
   }
