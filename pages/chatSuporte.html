@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suporte</title>
-    <link rel="stylesheet" href="../assets/style/chatSuporte.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte</title>
+  <link rel="stylesheet" href="../assets/style/chatSuporte.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <h2><i class="fas fa-home"></i>Home</h2>
-    <h2><i class="fas fa-shopping-cart"></i>Loja</h2>
-    <h2><i class="fas fa-comments"></i>Bate-papo</h2>
-    <h2><i class="fas fa-headset"></i>Suporte</h2>
-  </header>
 
+    <h2><a href="home.html"><i class="fas fa-home"></i>Home</a></h2>
+    <h2><a href="loja-produtos.html"><i class="fas fa-shopping-cart"></i>Loja</a></h2>
+    <h2><a href="chatProfissional.html"><i class="fas fa-comments"></i>Bate-papo</a></h2>
+    <h2><a href="treinos.html"><i class="fas fa-dumbbell"></i>Treinos</a></h2>
+
+    <div class="risquinhos">
+      <svg width="28" height="22" viewBox="0 0 28 22" style="vertical-align:middle; margin-left:8px;"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect y="0" width="28" height="2" rx="1" fill="currentColor" />
+        <rect y="9" width="28" height="2" rx="1" fill="currentColor" />
+        <rect y="18" width="28" height="2" rx="1" fill="currentColor" />
+      </svg>
+    </div>
+
+  </header>
   <main class="chat-container">
     <aside class="lista">
       <h3>Atendentes</h3>
       <div class="usuario ativo">Daniel Casalli</div>
       <div class="usuario">Maria Eduarda</div>
-      <div class="usuario">Julia Erlo</div>
+      <div class="usuario">Julia Miranda</div>
       <div class="usuario">Gabriela Emi</div>
     </aside>
 
@@ -43,17 +55,18 @@
     </section>
   </main>
 
-<script>
-  function enviarMsg() {
-    var mensagensContainer = document.getElementById("mensagensContainer");
-    var input = document.getElementById("msgInput");
+  <script>
+    function enviarMsg() {
+      var mensagensContainer = document.getElementById("mensagensContainer");
+      var input = document.getElementById("msgInput");
 
-    if (input.value !== "") {
-      mensagensContainer.innerHTML += "<div>" + input.value + "</div>";
-      input.value = "";
+      if (input.value !== "") {
+        mensagensContainer.innerHTML += "<div>" + input.value + "</div>";
+        input.value = "";
+      }
     }
-  }
-</script>
+  </script>
 
 </body>
+
 </html>
