@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-    <h2><i class="fas fa-home"></i>Home</h2>
-    <h2><i class="fas fa-shopping-cart"></i>Loja</h2>
-    <h2><i class="fas fa-comments"></i>Bate-papo</h2>
-    <h2><i class="fas fa-headset"></i>Suporte</h2>
+
+        <h2><a href="home.html"><i class="fas fa-home"></i>Home</a></h2>
+        <h2><a href="loja-produtos.html"><i class="fas fa-shopping-cart"></i>Loja</a></h2>
+        <h2><a href="chatProfissional.html"><i class="fas fa-comments"></i>Bate-papo</a></h2>
+        <h2><a href="treinos.html"><i class="fas fa-dumbbell"></i>Treinos</a></h2>
+
+        <div class="risquinhos">
+            <svg width="28" height="22" viewBox="0 0 28 22" style="vertical-align:middle; margin-left:8px;"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="0" width="28" height="2" rx="1" fill="currentColor" />
+                <rect y="9" width="28" height="2" rx="1" fill="currentColor" />
+                <rect y="18" width="28" height="2" rx="1" fill="currentColor" />
+            </svg>
+        </div>
+
     </header>
-    <div class="cart-main-container">
-    
+
+    <main class="cart-main-container">
+
+        <section class="offers">
+            <h3>Aproveite as ofertas</h3>
+            <div class="offers-list">
+                <div class="offer-row">
+                    <div class="offer-block">
+                        <img src="../assets/images/wheyIsolado.png" alt="Whey Protein Isolado (1KG)">
+                        <h4>Whey Protein Isolado (1KG)</h4>
+                        <div class="offer-prices">
+                            <span class="offer-old-price">R$224,00</span>
+                            <span class="offer-new-price">R$112,45</span>
+                        </div>
+                    </div>
+                    <div class="offer-block">
+                        <img src="../assets/images/cafeina.png" alt="CAFEÍNA 200MG 120COMP">
+                        <h4>CAFEÍNA 200MG 120COMP</h4>
+                        <div class="offer-prices">
+                            <span class="offer-old-price">R$69,90</span>
+                            <span class="offer-new-price">R$25,90</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-row">
+                    <div class="offer-block">
+                        <img src="../assets/images/insanity.png" alt="PRÉ-TREINO INSANITY 300G">
+                        <h4>PRÉ-TREINO INSANITY 300G</h4>
+                        <div class="offer-prices">
+                            <span class="offer-old-price">R$78,20</span>
+                            <span class="offer-new-price">R$67,80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="cart-items-section">
             <h2>Itens no carrinho</h2>
             <div class="cart-item-list">
@@ -60,57 +108,19 @@
             </div>
         </section>
 
-
-        <section class="offers-section">
-            <h3>Aproveite as ofertas</h3>
-            <div class="offers-list">
-                <div class="offer-row">
-                    <div class="offer-block">
-                        <img src="../assets/images/wheyIsolado.png" alt="Whey Protein Isolado (1KG)">
-                        <h4>Whey Protein Isolado (1KG)</h4>
-                        <div class="offer-prices">
-                            <span class="offer-old-price">R$224,00</span>
-                            <span class="offer-new-price">R$112,45</span>
-                        </div>
-                    </div>
-                    <div class="offer-block">
-                        <img src="../assets/images/cafeina.png" alt="CAFEÍNA 200MG 120COMP">
-                        <h4>CAFEÍNA 200MG 120COMP</h4>
-                        <div class="offer-prices">
-                            <span class="offer-old-price">R$69,90</span>
-                            <span class="offer-new-price">R$25,90</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="offer-row">
-                    <div class="offer-block">
-                        <img src="../assets/images/insanity.png" alt="PRÉ-TREINO INSANITY 300G">
-                        <h4>PRÉ-TREINO INSANITY 300G</h4>
-                        <div class="offer-prices">
-                            <span class="offer-old-price">R$78,20</span>
-                            <span class="offer-new-price">R$67,80</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="summary-section">
             <h4>Resumo do pedido</h4>
             <div class="summary-line">
-                <span>Subtotal:</span>
-                <span class="summary-total">R$399,86</span>
+                <span>Total:</span>
+                <span class="summary-total">R$259,88</span>
             </div>
-            <div class="summary-line">
-                <span class="summary-old">R$422,00</span>
-                <span class="summary-total">R$389,86</span>
-            </div>
-            <button class="summary-btn">Escolher mais produtos</button>
+             <a href="../pages/finalização.html" class="summary-btn" class="summary-btn">Continuar</a>
             <div>
                 <div class="summary-coupon-label">Adicione o cupom</div>
                 <input class="summary-coupon-input" type="text" placeholder="Cupom de desconto">
             </div>
         </section>
-    </div>
+    </main>
 </body>
+
 </html>
