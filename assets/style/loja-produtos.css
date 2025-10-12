@@ -108,6 +108,8 @@ main {
 
 .produtos-section {
     font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
     font-style: italic;
     margin-bottom: 100px;
     text-align: center;
@@ -223,7 +225,7 @@ p:hover {
     .container-produtos {
         justify-content: center;
     }
-    
+
     .bloco-produto {
         width: 45%;
         min-width: 250px;
@@ -253,7 +255,7 @@ p:hover {
     .container-produtos {
         justify-content: center;
     }
-    
+
     .bloco-produto {
         width: 45%;
         min-width: 250px;
