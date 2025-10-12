@@ -23,7 +23,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 header h2 {
@@ -64,78 +64,88 @@ header h2 a {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: clamp(20px, 5vw, 80px);
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 60px auto 0 auto;
 }
 
-.bloco-superior-A {
-    width: 300px;
-    height: auto;
+.bloco-treinos {
+    max-width: 600px;
+    min-height: 400px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
+    border: 4px solid white;
+    border-radius: 20px;
+    display: flex;
     color: rgb(255, 255, 255);
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    padding: 45px;
     align-items: center;
     background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+    transition: transform 0.4s ease, box-shadow 0.2s ease;
 }
 
-.bloco-superior-B {
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    align-items: center;
-   background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+.bloco-treinos h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
 }
 
-.bloco-A {
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    align-items: center;
-   background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+.bloco-treinos p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 26px;
 }
 
-.bloco-B {
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    align-items: center;
-    background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+.bloco-treinos:hover {
+    box-shadow: 0 0 35px rgb(255, 255, 255);
+    transform: scale(1.02);
+    cursor: context-menu;
 }
 
-.bloco-treino {
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    align-items: center;
-   background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+footer {
+    background: linear-gradient(90deg, #000000 0%, #3D2468 100%);
+    color: white;
+    margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+    font-size: 17px;
+    cursor: context-menu;
 }
 
-.bloco-completo {
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    align-items: center;
-   background-image: linear-gradient(rgba(20, 4, 37, 0.85), rgba(20, 4, 37, 0.85), rgba(68, 21, 99, 0.85));
+@media (max-width: 1024px) {
+    header {
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    .risquinhos {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: nowrap;
+        padding: 15px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    .risquinhos {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
 }
