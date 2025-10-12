@@ -62,19 +62,14 @@ header h2 a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 30%;
-  background: linear-gradient(135deg, #323232 0%, #2c2c2c 100%);
-  color: white;
-  border-radius: 14px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  padding: 50px;
   margin: 0 auto;
+  min-height: calc(100vh - 150px);
 }
 
 .usuario-container {
+  background: linear-gradient(135deg, #323232 0%, #2c2c2c 100%);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  border-radius: 14px;
   max-width: 760px;
   margin: 40px auto;
   padding: 28px;
@@ -128,8 +123,8 @@ header h2 a {
 
 .edit-btn img {
   display: block;
-  filter: invert(1) sepia(0) saturate(0) hue-rotate(240deg) brightness(1.2);
-  opacity: 0.95;
+  filter: brightness(0) invert(1) contrast(200%) saturate(0%);
+  opacity: 1;
 }
 
 .edit-btn:hover {
