@@ -135,12 +135,10 @@ header h2 a {
 .usuario-divisor {
   border: none;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.06),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.06),
+      transparent);
   margin: 10px 0 18px;
 }
 
@@ -167,11 +165,9 @@ header h2 a {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.35),
-    rgba(255, 255, 255, 0.02)
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.35),
+      rgba(255, 255, 255, 0.02));
   border-radius: 6px;
   padding: 8px 10px;
   border: 1px solid rgba(255, 255, 255, 0.04);
@@ -207,11 +203,9 @@ header h2 a {
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.04);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.02),
-    rgba(0, 0, 0, 0.25)
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(0, 0, 0, 0.25));
   color: #cfcfcf;
   font-size: 0.98rem;
   font-weight: 500;
@@ -222,17 +216,45 @@ header h2 a {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1024px) {
+  header {
+    padding: 15px;
+  }
+
+  header h2 {
+    font-size: 22px;
+  }
+
+  .risquinhos {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: nowrap;
+    padding: 15px;
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+
+  .risquinhos {
+    font-size: 20px;
+  }
+
   .usuario-container {
     margin: 20px;
     padding: 18px;
   }
+
   .usuario-campos {
     grid-template-columns: 1fr;
     gap: 12px;
   }
+
   .usuario-nome {
     font-size: 1rem;
   }
 }
-
