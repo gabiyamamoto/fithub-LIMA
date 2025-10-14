@@ -76,14 +76,16 @@ header h2 a {
     z-index: 10;
 }
 
-.quadrado-categoria h3 {
+.quadrado-categoria h3, .user-btn, .support-btn {
+    display: flex;
+    align-items: center;
     color: white;
     font-family: 'Inter', sans-serif;
     margin: 0;
     line-height: 8px;
     font-size: 18px;
-    display: flex;
-    align-items: center;
+    text-decoration: none;
+    font-weight: 750;
     cursor: pointer;
 }
 
