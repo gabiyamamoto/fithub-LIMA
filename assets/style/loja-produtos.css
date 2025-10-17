@@ -76,7 +76,7 @@ header h2 a {
     z-index: 10;
 }
 
-.quadrado-categoria h3, .user-btn, .support-btn {
+.quadrado-categoria h3, .user-btn, .support-btn, .cart-btn {
     display: flex;
     align-items: center;
     color: white;
