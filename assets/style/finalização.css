@@ -156,10 +156,11 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.botão h3 {
+.botão h3, .botão a {
     margin: 0;
     font-size: inherit;
     font-weight: inherit;
+    text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
